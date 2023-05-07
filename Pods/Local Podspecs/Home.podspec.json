@@ -1,0 +1,37 @@
+{
+  "name": "Home",
+  "version": "0.1.0",
+  "summary": "A short description of Home.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/carmudii/Home",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "carmudii": "carmudi@engineer.com"
+  },
+  "source": {
+    "git": "https://github.com/carmudii/Home.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "13.0"
+  },
+  "source_files": "Home/Module/**/*.{swift}",
+  "resources": "Home/Module/**/*.{storyboard,xib}",
+  "dependencies": {
+    "Common": [
+
+    ],
+    "Network": [
+
+    ]
+  },
+  "subspecs": [
+    {
+      "name": "Resources",
+      "resources": "Home/Module/**/*.{xcassets,json,xcdatamodeld,otf}"
+    }
+  ]
+}

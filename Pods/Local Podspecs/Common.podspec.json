@@ -1,0 +1,43 @@
+{
+  "name": "Common",
+  "version": "0.1.0",
+  "summary": "A short description of Common.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/carmudii/Common",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "carmudii": "carmudi@engineer.com"
+  },
+  "source": {
+    "git": "https://github.com/carmudii/Common.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "13.0"
+  },
+  "source_files": "Common/Module/**/*.{swift}",
+  "resources": "Common/Module/**/*.{storyboard,xib}",
+  "dependencies": {
+    "RxSwift": [
+      "6.5.0"
+    ],
+    "RxCocoa": [
+      "6.5.0"
+    ],
+    "CoreStore": [
+      "~> 9.0"
+    ],
+    "Shimmer": [
+
+    ]
+  },
+  "subspecs": [
+    {
+      "name": "Resources",
+      "resources": "Common/Module/**/*.{xcassets,json,xcdatamodeld,otf}"
+    }
+  ]
+}

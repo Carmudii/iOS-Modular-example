@@ -1,0 +1,90 @@
+PODS:
+  - Alamofire (5.6.4)
+  - Common (0.1.0):
+    - Common/Resources (= 0.1.0)
+    - CoreStore (~> 9.0)
+    - RxCocoa (= 6.5.0)
+    - RxSwift (= 6.5.0)
+    - Shimmer
+  - Common/Resources (0.1.0):
+    - CoreStore (~> 9.0)
+    - RxCocoa (= 6.5.0)
+    - RxSwift (= 6.5.0)
+    - Shimmer
+  - CoreStore (9.0.0)
+  - Home (0.1.0):
+    - Common
+    - Home/Resources (= 0.1.0)
+    - Network
+  - Home/Resources (0.1.0):
+    - Common
+    - Network
+  - Moya (15.0.0):
+    - Moya/Core (= 15.0.0)
+  - Moya/Core (15.0.0):
+    - Alamofire (~> 5.0)
+  - Moya/RxSwift (15.0.0):
+    - Moya/Core
+    - RxSwift (~> 6.0)
+  - Network (0.1.0):
+    - Common
+    - Moya (= 15.0)
+    - Moya/RxSwift (= 15.0)
+    - Network/Resources (= 0.1.0)
+  - Network/Resources (0.1.0):
+    - Common
+    - Moya (= 15.0)
+    - Moya/RxSwift (= 15.0)
+  - RxCocoa (6.5.0):
+    - RxRelay (= 6.5.0)
+    - RxSwift (= 6.5.0)
+  - RxRelay (6.5.0):
+    - RxSwift (= 6.5.0)
+  - RxSwift (6.5.0)
+  - Shimmer (1.0.2)
+
+DEPENDENCIES:
+  - Common (from `DevPods/Common`)
+  - Home (from `DevPods/Home`)
+  - Network (from `DevPods/Network`)
+  - Shimmer (from `https://github.com/facebookarchive/Shimmer`)
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - CoreStore
+    - Moya
+    - RxCocoa
+    - RxRelay
+    - RxSwift
+
+EXTERNAL SOURCES:
+  Common:
+    :path: DevPods/Common
+  Home:
+    :path: DevPods/Home
+  Network:
+    :path: DevPods/Network
+  Shimmer:
+    :git: https://github.com/facebookarchive/Shimmer
+
+CHECKOUT OPTIONS:
+  Shimmer:
+    :commit: a7eba17652638ef894407ce13a4bc5ca347ba488
+    :git: https://github.com/facebookarchive/Shimmer
+
+SPEC CHECKSUMS:
+  Alamofire: 4e95d97098eacb88856099c4fc79b526a299e48c
+  Common: f4fe80bec14a5643b09baaf1bbb51ab717c62a15
+  CoreStore: 1b820cd4d929750343479fd72585283a870973f4
+  Home: f89818a4a5e893db7af094f51de86e851dfffc56
+  Moya: 138f0573e53411fb3dc17016add0b748dfbd78ee
+  Network: 4a44ceee05d1eddda8e9286a431ca88ca3ef3b49
+  RxCocoa: 94f817b71c07517321eb4f9ad299112ca8af743b
+  RxRelay: 1de1523e604c72b6c68feadedd1af3b1b4d0ecbd
+  RxSwift: 5710a9e6b17f3c3d6e40d6e559b9fa1e813b2ef8
+  Shimmer: c5374be1c2b0c9e292fb05b339a513cf291cac86
+
+PODFILE CHECKSUM: bacb3e70d0f93333111ae368f74f33d2614e0de6
+
+COCOAPODS: 1.11.3

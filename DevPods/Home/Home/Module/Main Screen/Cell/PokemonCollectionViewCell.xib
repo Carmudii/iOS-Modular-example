@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="MYRIADPRO-REGULAR.OTF">
+            <string>MyriadPro-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="PokemonCollectionViewCell" customModule="Home" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="199" height="240"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="199" height="240"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="HZw-kt-xaN">
+                        <rect key="frame" x="20" y="20" width="159" height="170"/>
+                    </imageView>
+                    <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Buz-4R-Jtn" userLabel="Image Shimmer View" customClass="ShimmerView" customModule="Common">
+                        <rect key="frame" x="10" y="10" width="179" height="180"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="color" keyPath="contentColor">
+                                <color key="value" name="shimmerContent"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="-" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Ga-Dj-YbG">
+                        <rect key="frame" x="20" y="200" width="159" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="eSg-Y7-4du"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="MyriadPro-Regular" family="Myriad Pro" pointSize="15"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xul-CT-VE9" userLabel="Title Shimmer View" customClass="ShimmerView" customModule="Common">
+                        <rect key="frame" x="10" y="200" width="179" height="30"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="color" keyPath="contentColor">
+                                <color key="value" name="shimmerContent"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstItem="HZw-kt-xaN" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="20" id="8jK-Y3-dp2"/>
+                <constraint firstAttribute="trailing" secondItem="HZw-kt-xaN" secondAttribute="trailing" constant="20" id="A85-k1-O5a"/>
+                <constraint firstItem="1Ga-Dj-YbG" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="20" id="CJd-Lf-Jhy"/>
+                <constraint firstItem="1Ga-Dj-YbG" firstAttribute="top" secondItem="HZw-kt-xaN" secondAttribute="bottom" constant="10" id="EHc-Ul-Jyg"/>
+                <constraint firstAttribute="bottom" secondItem="xul-CT-VE9" secondAttribute="bottom" constant="10" id="ERE-wu-dCu"/>
+                <constraint firstItem="xul-CT-VE9" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="10" id="HK3-QI-pbr"/>
+                <constraint firstItem="Buz-4R-Jtn" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="10" id="Kg5-dB-jjJ"/>
+                <constraint firstAttribute="trailing" secondItem="Buz-4R-Jtn" secondAttribute="trailing" constant="10" id="MGn-Rm-TTC"/>
+                <constraint firstItem="Buz-4R-Jtn" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="10" id="OcJ-I1-aup"/>
+                <constraint firstAttribute="trailing" secondItem="1Ga-Dj-YbG" secondAttribute="trailing" constant="20" id="S55-Lg-aOB"/>
+                <constraint firstItem="xul-CT-VE9" firstAttribute="top" secondItem="1Ga-Dj-YbG" secondAttribute="top" id="WrG-r1-jKE"/>
+                <constraint firstAttribute="trailing" secondItem="xul-CT-VE9" secondAttribute="trailing" constant="10" id="byC-6O-u8E"/>
+                <constraint firstItem="Buz-4R-Jtn" firstAttribute="bottom" secondItem="HZw-kt-xaN" secondAttribute="bottom" id="nAt-O9-i7x"/>
+                <constraint firstItem="HZw-kt-xaN" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="20" id="tnS-0i-SHr"/>
+                <constraint firstAttribute="bottom" secondItem="1Ga-Dj-YbG" secondAttribute="bottom" constant="20" id="xyT-QI-Y8a"/>
+            </constraints>
+            <size key="customSize" width="199" height="240"/>
+            <connections>
+                <outlet property="imageView" destination="HZw-kt-xaN" id="olA-vV-dAU"/>
+                <outlet property="title" destination="1Ga-Dj-YbG" id="AzY-02-Thg"/>
+                <outletCollection property="shimmerView" destination="xul-CT-VE9" collectionClass="NSMutableArray" id="TcL-mz-www"/>
+                <outletCollection property="shimmerView" destination="Buz-4R-Jtn" collectionClass="NSMutableArray" id="3UL-dq-Lbb"/>
+            </connections>
+            <point key="canvasLocation" x="150.38167938931298" y="85.91549295774648"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <namedColor name="shimmerContent">
+            <color red="0.80000001192092896" green="0.83499997854232788" blue="0.87099999189376831" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

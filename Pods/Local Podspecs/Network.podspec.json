@@ -1,0 +1,40 @@
+{
+  "name": "Network",
+  "version": "0.1.0",
+  "summary": "A short description of Network.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/carmudii/Network",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "carmudii": "carmudi@engineer.com"
+  },
+  "source": {
+    "git": "https://github.com/carmudii/Network.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "13.0"
+  },
+  "source_files": "Network/Module/**/*.{swift}",
+  "resources": "Network/Module/**/*.{storyboard,xib}",
+  "dependencies": {
+    "Common": [
+
+    ],
+    "Moya/RxSwift": [
+      "15.0"
+    ],
+    "Moya": [
+      "15.0"
+    ]
+  },
+  "subspecs": [
+    {
+      "name": "Resources",
+      "resources": "Network/Module/**/*.{xcassets,json,xcdatamodeld,otf}"
+    }
+  ]
+}
